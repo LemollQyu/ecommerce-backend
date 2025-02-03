@@ -24,3 +24,10 @@ Route::post('/register', [AuthenticationController::class, 'register']);
 Route::post('/verify-otp', [AuthenticationController::class, 'verifyOtp']);
 Route::post('/verify-register', [AuthenticationController::class, 'verifyRegister']);
 
+
+// untuk resend otp
+Route::post('/resend-otp', [AuthenticationController::class, 'resendOtp']);
+
+// login
+Route::post('/login', [AuthenticationController::class, 'login']);
+
